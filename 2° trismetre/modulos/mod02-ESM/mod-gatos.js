@@ -1,7 +1,7 @@
 
 
 export function banhoGato(racaoGato, tipoBanho){
-    return `Gato ${racaoGato} fez um banho tipo: ${tipoBanho}`
+    return `Gato ${racaoGato} tomou banho com: ${tipoBanho}`
 }
 
 
