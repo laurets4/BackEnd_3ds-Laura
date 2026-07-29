@@ -7,7 +7,7 @@ const path = require('path')
 const chalk = require('chalk').default
 
 try {
-const caminho = path.resolve(__dirname, 'README.md') // Abrir, ler, deletar, editar
+const caminho = path.resolve(__dirname, 'READM.md') // Abrir, ler, deletar, editar
 const arquivo = fs.readFileSync(caminho, 'utf-8')
 console.log(chalk.green('Arquivo carregado com sucesso'))
 console.log(arquivo)
