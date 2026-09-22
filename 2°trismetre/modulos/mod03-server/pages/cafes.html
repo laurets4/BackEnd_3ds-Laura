@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafés Especiais | Doce Magia Confeitaria</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #faf6f0; color: #3e2723; margin: 0; padding: 20px; text-align: center; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #8d6e63; font-size: 2.5em; margin-bottom: 10px; }
+        p { line-height: 1.6; font-size: 1.1em; color: #6d4c41; }
+        .cardapio { margin: 30px 0; text-align: left; }
+        .item-cafe { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px dashed #d7ccc8; }
+        .item-info h3 { margin: 0 0 5px 0; color: #3e2723; }
+        .item-info p { margin: 0; font-size: 0.9em; color: #795548; }
+        .preco { font-weight: bold; color: #8d6e63; font-size: 1.2em; }
+        .navegacao { margin-top: 20px; display: flex; justify-content: center; gap: 15px; align-items: center; }
+        .btn-voltar { display: inline-block; color: #8d6e63; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        .btn-voltar:hover { color: #4e342e; text-decoration: underline; }
+        .divisor { color: #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Cafés Especiais</h1>
+        <p>Grãos selecionados de alta qualidade, torrados com precisão e extraídos com perfeição para o seu momento de pausa.</p>
+        
+        <div class="cardapio">
+            <div class="item-cafe">
+                <div class="item-info">
+                    <h3>Espresso Trufado</h3>
+                    <p>Dose de espresso blend da casa sobre uma generosa camada de ganache de chocolate meio amargo.</p>
+                </div>
+                <div class="preco">R$ 10</div>
+            </div>
+
+            <div class="item-cafe">
+                <div class="item-info">
+                    <h3>Cappuccino Doce Magia</h3>
+                    <p>Café espresso, leite vaporizado cremoso, borda da xícara com doce de leite e toque de canela.</p>
+                </div>
+                <div class="preco">R$ 14</div>
+            </div>
+
+            <div class="item-cafe">
+                <div class="item-info">
+                    <h3>Iced Latte Baunilha</h3>
+                    <p>Café espresso extraído na hora, leite gelado, xarope artesanal de baunilha e cubos de gelo.</p>
+                </div>
+                <div class="preco">R$ 16</div>
+            </div>
+        </div>
+
+        <div class="navegacao">
+            <a href="../pages/index.html" class="btn-voltar">← Voltar para a Página Inicial</a>
+            <span class="divisor">|</span>
+            <a href="/sobre" class="btn-voltar">✨ Sobre Nós</a>
+        </div>
+    </div>
+</body>
+</html>

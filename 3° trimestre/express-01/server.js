@@ -1,15 +1,13 @@
 import express from 'express'
-
-const PORT = 3000
+import path from 'path' // resolver conflitos de pastas 
+const PORT = process.env.PORT || 3000
 const app = express()
+const baseDir = import.meta.dirname
+// Usar Middleware (software guardião)
+app.use(express.static(path.join(baseDir, 'public')))
 
 app.get('/', (req, res) => { // calback ou retorno
-    res.send('<h3>Hello Pet!</h3>')
+    res.sendFile('src/pages/index.html', {root: baseDir})
 })  
-app.get('/servicos', (req, res) => { // calback ou retorno 
-    res.send('<h3>Serviços Pet!</h3>')
-}) 
-app.get('/produtos', (req, res) => { // calback ou retorno 
-    res.send('<h3>Produtos Pet!</h3>')
-}) 
-app.listen(PORT, () => {console.log('Servidor Vivo!')})
+
+app.listen(PORT, () => {console.log('Servidor OK na porta! ' + PORT)})
