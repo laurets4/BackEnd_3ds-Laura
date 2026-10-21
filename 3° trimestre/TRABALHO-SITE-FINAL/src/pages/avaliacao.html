@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STELA | Avaliações</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="avaliacao.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Fixo (Fundo Off-White) -->
+    <header class="main-header">
+        <div class="logo">STELA</div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                <li><a href="/avaliacao" class="active">Avaliação</a></li>
+                <li><a href="/localizacao">Localização</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Faixa de Destaque Superior (Idêntica ao bloco magenta da imagem) -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Sua opinião reflete nossa evolução</h1>
+                <p>Espaço dedicado para compartilhar experiências e rituais de autocuidado com as nossas fórmulas botânicas.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos em Grid Limpo -->
+        <section class="categories-section">
+            <h2 class="section-title">Depoimentos & Experiências</h2>
+            
+            <div class="categories-grid">
+                <!-- Card 1 -->
+                <div class="category-card evaluation-card">
+                    <p class="review-text">"Apaixonada pela maquiagem minimalista. Deixa um aspecto fresco, radiante e natural. Sinto que minha pele respira o dia todo."</p>
+                    <div class="review-footer">
+                        <span class="client-name">Beatriz M.</span>
+                        <span class="stars-count">★★★★★</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="category-card evaluation-card">
+                    <p class="review-text">"O óleo corporal de SPA transforma a hora do banho num momento único de reconexão. O produto superou as minhas expectativas."</p>
+                    <div class="review-footer">
+                        <span class="client-name">Camila R.</span>
+                        <span class="stars-count">★★★★☆</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="category-card evaluation-card">
+                    <p class="review-text">"Os produtos de tratamento facial mudaram a textura da minha pele. O toque é leve e o aroma traz uma paz inexplicável."</p>
+                    <div class="review-footer">
+                        <span class="client-name">Mariana S.</span>
+                        <span class="stars-count">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Isolada do Formulário para manter a ordem visual -->
+        <section class="form-section">
+            <div class="form-container">
+                <div class="form-header-box">
+                    <h2>DEIXE SEU DEPOIMENTO</h2>
+                </div>
+                
+                <form class="form-body-box">
+                    <div class="form-row">
+                        <div class="input-block">
+                            <label for="name">NOME</label>
+                            <input type="text" id="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="rating">NOTA</label>
+                            <select id="rating" required>
+                                <option value="5">★★★★★ Excelente</option>
+                                <option value="4">★★★★☆ Muito bom</option>
+                                <option value="3">★★★☆☆ Regular</option>
+                                <option value="2">★★☆☆☆ Ruim</option>
+                                <option value="1">★☆☆☆☆ Péssimo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-block full-width">
+                        <label for="message">MENSAGEM</label>
+                        <textarea id="message" rows="4" placeholder="Como foi sua experiência?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">ENVIAR AVALIAÇÃO</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Fixo (Faixa Magenta de Ponta a Ponta) -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">Pinterest</a>
+        </div>
+        <p class="copyright">© 2026 STELA Cosméticos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+/* ==========================================================================
+   Configurações de Reset e Cores de Fundo (Modelo da Imagem)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF6F0; /* Cor off-white padrão da imagem */
+    font-family: 'Inter', sans-serif;
+    color: #222222;
+}
+
+/* ==========================================================================
+   Cabeçalho (Header Fixo)
+   ========================================================================== */
+.main-header {
+    background-color: #FAF6F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/* ==========================================================================
+   Bloco Hero Banner (Destaque Magenta)
+   ========================================================================== */
+.hero-section {
+    background-color: #A61C5D; /* Tom exato extraído do topo da foto */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hero-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Layout Lado a Lado (Duas Colunas Alinhadas)
+   ========================================================================== */
+.reviews-split-container {
+    max-width: 1200px;
+    margin: 50px auto 80px auto;
+    padding: 0 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o espaço exatamente ao meio */
+    gap: 50px; /* Distância limpa entre as duas seções */
+    align-items: start;
+}
+
+.column-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   Coluna da Esquerda: Lista de Depoimentos
+   ========================================================================== */
+.reviews-vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.evaluation-card {
+    background: #FFFFFF;
+    padding: 25px;
+    border: none;
+    border-radius: 0px; /* Padrão reto e sem curvas da imagem */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+}
+
+.review-text {
+    font-size: 0.88rem;
+    color: #555555;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 1px solid #FAF6F0;
+    padding-top: 10px;
+}
+
+.client-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.stars-count {
+    color: #A61C5D;
+    font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   Coluna da Direita: Caixa do Formulário
+   ========================================================================== */
+.form-container-box {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+}
+
+.form-body-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-block label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #777777;
+    letter-spacing: 0.5px;
+}
+
+.input-block input,
+.input-block select,
+.input-block textarea {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF6F0;
+    border: 1px solid #EAE5DC;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #222222;
+    border-radius: 0px;
+    outline: none;
+    width: 100%;
+}
+
+.input-block input:focus,
+.input-block select:focus,
+.input-block textarea:focus {
+    border-color: #A61C5D;
+}
+
+.btn-send {
+    font-family: 'Inter', sans-serif;
+    background-color: #A61C5D; /* Tom magenta uniforme */
+    color: #FFFFFF;
+    border: none;
+    padding: 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btn-send:hover {
+    background-color: #851247;
+}
+
+/* ==========================================================================
+   Rodapé (Base Magenta)
+   ========================================================================== */
+.main-footer {
+    background-color: #A61C5D;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Quebra automática para uma única coluna em telas menores (Celulares) */
+@media (max-width: 850px) {
+    .reviews-split-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 30px auto 60px auto;
+    }
+}

@@ -1,0 +1,162 @@
+/* Alinhamento estrutural do menu do cabeçalho */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* NOVO: Estilo do Retângulo Rosa (Hero Banner) vindo da imagem de referência */
+.hero-banner-products {
+    background-color: #C72C61; /* Tom rosa escuro vibrante idêntico à imagem */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content-products {
+    max-width: 750px;
+}
+
+.hero-content-products h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.hero-content-products p {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+/* Container principal alinhado com a largura do projeto */
+.products-main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Bloco de introdução e texto descritivo */
+.products-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+/* Título da Página */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+/* Frase sobre os produtos */
+.page-description {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.products-layout {
+    margin-top: 20px;
+}
+
+/* Catálogo */
+.catalog-container {
+    width: 100%;
+}
+
+/* Grade de Cards centralizada e responsiva */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 40px 25px;
+}
+
+/* Card de Produto */
+.product-card {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    background-color: #EFECE8; /* Tom neutro refinado para placeholder */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A09A93;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product-details {
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.product-tag {
+    font-size: 11px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #C72C61; /* Rosa característico da marca */
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+
+/* Botão de Compra */
+.btn-add {
+    width: 100%;
+    background-color: #B2A27D; /* Dourado/Oliva sutil */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.btn-add:hover {
+    background-color: #9A8B66;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STELA | Localização</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
+    
+    <!-- Pequeno ajuste visual para o ícone do carrinho se adaptar ao seu menu -->
+    <style>
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .cart-link {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            transition: opacity 0.2s ease;
+        }
+        .cart-link:hover {
+            opacity: 0.7;
+        }
+        .cart-icon {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor; /* Usa a mesma cor do texto do menu automaticamente */
+            stroke-width: 1.5;
+        }
+        
+        /* Ajuste simples para o mapa preencher o espaço do bloco como os cards fazem */
+        .map-box {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho Fixo -->
+    <header class="main-header">
+        <div class="logo">STELA</div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                <li><a href="/avaliacao">Avaliação</a></li>
+                <li><a href="/localizacao" class="active">Localização</a></li>
+                <!-- Nova Aba do Carrinho posicionada na extremidade direita do menu -->
+                
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero Responsiva (Igual à Home, mas com dados de endereço) -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Venha conhecer a nossa casa física</h1>
+                <p>Alameda Lorena, 1420 — Boa vista, Curitiba - PR</p>
+                <a href="https://www.google.com/maps/search/Alameda+Lorena,+1420+%E2%80%94+Boa+vista,+Curitiba+-+PR" target="_blank" rel="noopener" class="btn-cta">Como Chegar</a>
+            </div>
+        </section>
+        <!-- Seção de Dados em Grid (Aproveitando o mesmo estilo das Categorias) -->
+        <section class="categories-section">
+            <h2 class="section-title">Informações e Horários</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="category-name">Segunda a Sexta<br><small style="font-weight: 300; font-size: 0.85rem;">10h às 19h</small></span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Sábados e Feriados<br><small style="font-weight: 300; font-size: 0.85rem;">10h às 16h</small></span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Contato Direto<br><small style="font-weight: 300; font-size: 0.85rem;">(11) 98765-4321</small></span>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">Pinterest</a>
+        </div>
+        <p class="copyright">© 2026 STELA Cosméticos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

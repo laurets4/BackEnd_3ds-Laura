@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STELA | Essência da Beleza</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
+    
+    <!-- Pequeno ajuste visual para o ícone do carrinho se adaptar ao seu menu -->
+    <style>
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .cart-link {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            transition: opacity 0.2s ease;
+        }
+        .cart-link:hover {
+            opacity: 0.7;
+        }
+        .cart-icon {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: currentColor; /* Usa a mesma cor do texto do menu automaticamente */
+            stroke-width: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho Fixo -->
+    <header class="main-header">
+        <div class="logo">STELA</div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                <li><a href="/avaliacao">Avaliação</a></li>
+                <li><a href="/localizacao">Localização</a></li>
+                <!-- Nova Aba do Carrinho posicionada na extremidade direita do menu -->
+                
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero Responsiva -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Sua beleza refletida na sua forma mais pura</h1>
+                <p>Cosméticos de alta performance criados de forma ética e sustentável para enaltecer a sua essência natural todos os dias.</p>
+                <a href="/produtos" class="btn-cta">Conhecer Produtos</a>
+            </div>
+        </section>
+        <!-- Seção de Categorias em Grid -->
+        <section class="categories-section">
+            <h2 class="section-title">Nossas Categorias</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="category-name">Tratamentos Faciais</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Maquiagem Minimalista</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Perfumaria Botânica</span>
+                </div>
+                <div class="category-card">
+                    <span class="category-name">Cuidados de SPA</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">Pinterest</a>
+        </div>
+        <p class="copyright">© 2026 STELA Cosméticos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
